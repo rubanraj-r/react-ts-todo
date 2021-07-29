@@ -1,0 +1,38 @@
+.add-task {
+  width: 40vw;
+  margin: 50px 28vw;
+  padding: 20px;
+}
+
+.task-input {
+  font-family: inherit;
+  width: 25vw;
+  border: 0;
+  border-bottom: 2px solid #282c34;
+  outline: 0;
+  font-size: 1.3rem;
+  color: #282c34;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+}
+
+.task-input:hover {
+  border-bottom: 2px solid orange;
+}
+
+.task-input:focus {
+  border-bottom: 2px solid orange;
+}
+
+input[type="text"].task-input::placeholder {
+  color: lightslategray;
+  font-size: 1rem;
+}
+
+input[type="text"].task-input:placeholder-shown ~ .task-input {
+  font-size: 1.3rem;
+  cursor: text;
+  top: 20px;
+}
+

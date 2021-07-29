@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=WindSong:wght@500&display=swap');
+
+.App {
+  text-align: center;
+}
+
+.app-header {
+  background-color: #282c34;
+  height: 65px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'WindSong', cursive;
+  font-weight: 500;
+  font-size: 42px;
+  color: orange;
+  text-decoration: underline;
+}
+
+.app-header:hover {
+  color: beige
+}
+
+.app-main-section {
+  margin: 65px;
+}

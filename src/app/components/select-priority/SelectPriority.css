@@ -1,0 +1,29 @@
+.select-priority {
+  height: 30px;
+  width: 120px;
+  margin: 0 10px;
+  padding: 10px;
+  appearance: none;
+  background-color: transparent;
+  border: none;
+  padding: 0 1em 0 0;
+  font-family: inherit;
+  font-size: inherit;
+  text-align: center;
+  cursor: inherit;
+  line-height: inherit;
+  outline: none;
+  cursor: pointer;
+}
+
+.select-priority:hover {
+  text-decoration: underline;
+  background-color: #ffe5b4;
+}
+
+.priority-option {
+  text-align: center;
+  align-self: center;
+  align-items: center;
+  align-content: center;
+}

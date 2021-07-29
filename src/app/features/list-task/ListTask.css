@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+.empty-list {
+  font-size: 24px;
+  color: lightslategrey;
+}
+
+.task-list {
+  min-height: 50vh;
+  width: 35vw;
+  background-color: whitesmoke;
+  margin: 50px 30vw;
+  padding: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  list-style-type: none;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+}
+
+.task-list:hover {
+  box-shadow: 0 2px 4px 0 orange;
+}
+
+.task-list-item {
+  height: 35px;
+  font-size: 18px;
+}
+
+.task-name {
+  float: left
+}
+
+.hr {
+  margin-top: -3px;
+}

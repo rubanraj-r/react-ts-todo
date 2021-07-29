@@ -1,0 +1,14 @@
+.add-btn {
+  height: 35px;
+  margin: 0 10px;
+  width: 35px;
+  border-radius: 50%;
+  border-color: #282c34;
+  cursor: pointer;
+  background-color: beige;
+  color: #282c34;
+}
+
+.add-btn:hover {
+  background-color: orange;
+}
