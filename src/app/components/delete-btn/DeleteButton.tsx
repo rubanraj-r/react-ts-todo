@@ -5,8 +5,8 @@ interface Props {
   onClick: () => void;
 };
 
-const DeleteButton: React.FC<Props> = ({ onClick }) => {
-  return (
+const DeleteButton: React.FC<Props> = 
+  ({ onClick }): React.ReactElement<HTMLButtonElement> => (
     <button className="delete-btn" onClick={onClick}>
       <svg
         aria-hidden="true"
@@ -25,6 +25,5 @@ const DeleteButton: React.FC<Props> = ({ onClick }) => {
       </svg>
     </button>
   );
-};
 
 export default DeleteButton;

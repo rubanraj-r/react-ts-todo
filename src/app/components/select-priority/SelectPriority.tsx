@@ -30,22 +30,23 @@ const options: PriorityOption[] = [
   },
 ];
 
-const SelectPriority: React.FC<Props> = ({ setPriority }) => (
-  <select
-    className="select-priority"
-    id="select-priority"
-    onChange={e => setPriority(e.target.value as PriorityType)}
-  >
-    {options.map((option: PriorityOption, i: number) => 
-      <option
-        key={i}
-        className="priority-option"
-        value={option.value}
-      >
-        {option.name}
-      </option>
-    )}
-  </select>
-);
+const SelectPriority: React.FC<Props> = 
+  ({ setPriority }): React.ReactElement<HTMLSelectElement> => (
+    <select
+      className="select-priority"
+      id="select-priority"
+      onChange={e => setPriority(e.target.value as PriorityType)}
+    >
+      {options.map((option: PriorityOption, i: number) => 
+        <option
+          key={i}
+          className="priority-option"
+          value={option.value}
+        >
+          {option.name}
+        </option>
+      )}
+    </select>
+  );
 
 export default SelectPriority;

@@ -4,10 +4,11 @@ interface Props {
   taskName: string;
 };
 
-const TaskItem: React.FC<Props> = ({ taskName }) => (
-  <span className="task-name">
-    {taskName}
-  </span>
-);
+const TaskItem: React.FC<Props> = 
+  ({ taskName }): React.ReactElement<HTMLSpanElement> => (
+    <span className="task-name">
+      {taskName}
+    </span>
+  );
 
 export default TaskItem;

@@ -3,7 +3,7 @@ import { AddNewTask, ListTask } from './features';
 import { Task } from '../interface';
 import './App.css';
 
-function App() {
+const App: React.FC = (): React.ReactElement<HTMLDivElement> => {
   const [tasks, setTasks] = React.useState<Task[]>([]);
   return (
     <div className="App">

@@ -7,7 +7,9 @@ interface Props {
   tasks: Task[];
   setTasks: React.Dispatch<React.SetStateAction<Task[]>>;
 }
-const ListTask: React.FC<Props> = ({ tasks, setTasks }) => {
+const ListTask: React.FC<Props> = 
+  ({ tasks, setTasks }): React.ReactElement<HTMLUListElement> => {
+
   const sortedTask: Task[] = tasks.sort((a, b) => 
     parseInt(a.priority as string) - parseInt(b.priority as string));
 

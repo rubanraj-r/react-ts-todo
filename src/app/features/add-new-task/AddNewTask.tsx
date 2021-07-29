@@ -8,7 +8,9 @@ interface Props {
   setTasks: React.Dispatch<React.SetStateAction<Task[]>>;
 };
 
-const AddNewTask: React.FC<Props> = ({ tasks, setTasks }) => {
+const AddNewTask: React.FC<Props> = 
+  ({ tasks, setTasks }): React.ReactElement<HTMLDivElement> => {
+    
   const [task, setTask] = React.useState<string>('');
   const [priority, setPriority] = React.useState<PriorityType | ''>('');
   

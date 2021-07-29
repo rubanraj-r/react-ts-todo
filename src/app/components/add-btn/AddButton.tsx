@@ -5,8 +5,8 @@ interface Props {
   onClick: () => void;
 };
 
-const AddButton: React.FC<Props> = ({ onClick }) => {
-  return (
+const AddButton: React.FC<Props> = 
+  ({ onClick }): React.ReactElement<HTMLButtonElement> => (
     <button className="add-btn" onClick={() => onClick()}>
       <svg
         aria-hidden="true"
@@ -25,6 +25,5 @@ const AddButton: React.FC<Props> = ({ onClick }) => {
       </svg>
     </button>
   );
-}
 
 export default AddButton;
