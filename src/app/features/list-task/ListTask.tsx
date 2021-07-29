@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { DeleteButton, TaskItem } from '../../components';
-import { PriorityType, Task } from '../../interface';
+import { PriorityType, Task } from '../../../interface';
 import './ListTask.css';
 
 interface Props {

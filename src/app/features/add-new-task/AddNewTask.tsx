@@ -1,6 +1,6 @@
 import * as React from "react";
 import { AddButton, AddTaskInput, SelectPriority } from "../../components";
-import { PriorityType, Task } from "../../interface";
+import { PriorityType, Task } from "../../../interface";
 import './AddNewTask.css';
 
 interface Props {
